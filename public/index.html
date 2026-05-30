@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام تسجيل الطلبة</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; direction: rtl; text-align: right; }
+    h1 { color: #2a5d84; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 18px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>نظام تسجيل الطلبة (SRS)</h1>
+  <p>أنشأت هذه النسخة لتعمل كخلفية API مبسطة مع SQLite. يمكنك بدء التطبيق ثم استخدام أدوات مثل Postman أو curl.</p>
+
+  <div class="card">
+    <h2>النقاط الأساسية</h2>
+    <ul>
+      <li>Users: تسجيل دخول وتسجيل مستخدم جديد.</li>
+      <li>Students: CRUD للطلاب.</li>
+      <li>Courses: CRUD للمقررات.</li>
+      <li>Instructors: إضافة دكاترة وربطهم بالمقررات.</li>
+      <li>Enrollments: تسجيل الطلاب في المقررات.</li>
+      <li>Reports: ملخصات وأرقام.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>الواجهة البرمجية (API)</h2>
+    <pre>/api/users
+/api/students
+/api/courses
+/api/instructors
+/api/enrollments
+/api/reports</pre>
+  </div>
+
+  <div class="card">
+    <h2>تشغيل</h2>
+    <pre>npm install
+npm start</pre>
+  </div>
+</body>
+</html>
