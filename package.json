@@ -1,17 +1,18 @@
 {
   "name": "srs-system",
   "version": "1.0.0",
-  "description": "Student Registration System using Node.js, Express, and SQLite",
+  "description": "Student Registration System using Node.js, Express, and React",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "concurrently \"nodemon app.js\" \"cd client && npm run dev\"",
-    "server": "nodemon app.js",
-    "client": "cd client && npm run dev"
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "cd client && npm install",
+    "dev": "concurrently \"nodemon app.js\" \"cd client && npm run dev\""
   },
   "dependencies": {
     "express": "^4.18.2",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
